@@ -151,7 +151,7 @@ button:focus {
   height: 2px;
   width: 100px;
   content: "";
-  background: #000000;
+  background: #ffffff;
   margin-left: -50px;
 }
 @media (max-width: 767px) {
@@ -206,7 +206,7 @@ button:focus {
   transition: all 0.4s ease 0s;
 }
 .primary-btn:hover {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
   border: 2px solid transparent;
 }
@@ -319,7 +319,7 @@ button:focus {
   border-bottom: none;
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-  background: #000000;
+  background: #ffffff;
   color: #ffffff;
 }
 @media (min-width: 992px) {
@@ -419,13 +419,13 @@ button:focus {
   }
 }
 .banner-content .primary-btn {
-  background: #000000;
+  background: #ffffff;
   border: 2px solid transparent;
   color: #fff;
 }
 .banner-content .primary-btn:hover {
   background: transparent;
-  border-color: #000000;
+  border-color: #ffffff;
   color: #ffffff;
 }
 .banner-content h1 {
@@ -555,7 +555,7 @@ button:focus {
   margin-right: 0px;
 }
 .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
-  color: #000000;
+  color: #919191;
 }
 
 .projects_inner {
@@ -702,7 +702,7 @@ button:focus {
   color: #000 !important;
 }
 .social_details li a i:hover {
-  color: #000000 !important;
+  color: #919191 !important;
 }
 .social_details li:last-child {
   margin-right: 0px;
@@ -728,8 +728,8 @@ button:focus {
   display: inline-block;
 }
 .blog_btn:hover {
-  background: #000000;
-  border-color: #000000;
+  background: #ffffff;
+  border-color: #ffffff;
   color: #fff;
 }
 
@@ -750,7 +750,7 @@ button:focus {
   border: none;
 }
 .white_bg_btn:hover {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
 }
 
@@ -771,7 +771,7 @@ button:focus {
   margin-right: 0px;
 }
 .causes_slider .owl-dots .owl-dot.active {
-  background: #000000;
+  background: #ffffff;
 }
 
 .causes_item {
@@ -791,7 +791,7 @@ button:focus {
 .causes_item .causes_img .c_parcent span {
   width: 70%;
   height: 3px;
-  background: #000000;
+  background: #ffffff;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -801,7 +801,7 @@ button:focus {
   position: absolute;
   right: -10px;
   bottom: 0px;
-  background: #000000;
+  background: #ffffff;
   color: #fff;
   padding: 0px 5px;
 }
@@ -817,7 +817,7 @@ button:focus {
   cursor: pointer;
 }
 .causes_item .causes_text h4:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .causes_item .causes_text p {
   font-size: 14px;
@@ -828,11 +828,11 @@ button:focus {
 }
 .causes_item .causes_bottom a {
   width: 50%;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   text-align: center;
   float: left;
   line-height: 50px;
-  background: #000000;
+  background: #ffffff;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -888,7 +888,7 @@ button:focus {
   color: #0d0d0d;
 }
 .tags .tag_btn:before {
-  background: #000000;
+  background: #ffffff;
 }
 .tags .tag_btn + .tag_btn {
   margin-left: 2px;
@@ -946,7 +946,7 @@ button:focus {
   height: 1px;
 }
 .categories_post:hover .categories_details {
-  background: #000000;
+  background: #ffffff;
   opacity: 0.6;
 }
 .categories_post:hover h5 {
@@ -978,7 +978,7 @@ button:focus {
   color: #777777;
 }
 .blog_info .post_tag a.active {
-  color: #000000;
+  color: #ffffff;
 }
 .blog_info .blog_meta li a {
   font: 300 14px/20px "Roboto", sans-serif;
@@ -996,7 +996,7 @@ button:focus {
   vertical-align: middle;
 }
 .blog_info .blog_meta li a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .blog_post img {
@@ -1011,7 +1011,7 @@ button:focus {
   transition: all 0.4s ease 0s;
 }
 .blog_post .primary_btn:hover {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
 }
 
@@ -1026,7 +1026,7 @@ button:focus {
   transition: all 0.3s linear;
 }
 .blog_details h2:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .blog_details p {
   margin-bottom: 26px;
@@ -1040,7 +1040,7 @@ button:focus {
 .blog_right_sidebar .widget_title {
   font-size: 18px;
   line-height: 25px;
-  background: #000000;
+  background: #ffffff;
   text-align: center;
   color: #fff;
   padding: 8px 0px;
@@ -1057,7 +1057,7 @@ button:focus {
   border-radius: 45px;
   z-index: 0;
   text-indent: 20px;
-  background: #000000;
+  background: #ffffff;
 }
 .blog_right_sidebar .search_widget .input-group .form-control.placeholder {
   color: #fff;
@@ -1125,7 +1125,7 @@ button:focus {
   margin-left: 20px;
 }
 .blog_right_sidebar .author_widget .social_icon a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body {
   justify-content: center;
@@ -1140,7 +1140,7 @@ button:focus {
   transition: all 0.3s linear;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
   font-size: 12px;
@@ -1167,10 +1167,10 @@ button:focus {
   padding-top: 15px;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover a {
-  color: #000000;
+  color: #ffffff;
 }
 .blog_right_sidebar .post_category_widget .cat-list li:hover {
-  border-color: #000000;
+  border-color: #ffffff;
 }
 .blog_right_sidebar .newsletter_widget {
   text-align: center;
@@ -1216,7 +1216,7 @@ button:focus {
   box-shadow: none;
 }
 .blog_right_sidebar .newsletter_widget .bbtns {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
   font-size: 12px;
   line-height: 38px;
@@ -1242,7 +1242,7 @@ button:focus {
   font-size: 12px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
 }
 .blog_right_sidebar .br {
@@ -1269,7 +1269,7 @@ button:focus {
 }
 
 .blog-pagination .page-item.active .page-link {
-  background: #000000;
+  background: #ffffff;
   border-color: transparent;
   color: #fff;
 }
@@ -1296,7 +1296,7 @@ button:focus {
 .blog-pagination .page-link:hover {
   color: #fff;
   text-decoration: none;
-  background: #000000;
+  background: #ffffff;
   border-color: #eee;
 }
 
@@ -1315,7 +1315,7 @@ button:focus {
   transition: all 0.2s linear;
 }
 .single-post-area .social-links li a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 .single-post-area .blog_details {
   padding-top: 26px;
@@ -1493,7 +1493,7 @@ button:focus {
 }
 .comments-area .btn-reply:hover {
   border: transparent;
-  background: #000000;
+  background: #ffffff;
   color: #fff;
 }
 
@@ -1587,7 +1587,7 @@ button:focus {
   top: 0;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
 }
 .contact_info .info_item h6 {
@@ -1642,10 +1642,10 @@ button:focus {
   height: 134px;
 }
 .contact_form .primary-btn {
-  background: #000000;
+  background: #ffffff;
   color: #fff;
   margin-top: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
 }
 .contact_form .primary-btn:hover {
   color: #000;
@@ -1683,7 +1683,7 @@ button:focus {
 .modal-message .modal-dialog .modal-content .modal-header h2 {
   display: block;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
 }
@@ -1715,25 +1715,25 @@ button:focus {
 }
 .sample-text-area p b {
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
 }
 .sample-text-area p i {
-  color: #000000;
+  color: #ffffff;
   font-style: italic;
 }
 .sample-text-area p sup {
-  color: #000000;
+  color: #ffffff;
   font-style: italic;
 }
 .sample-text-area p sub {
-  color: #000000;
+  color: #ffffff;
   font-style: italic;
 }
 .sample-text-area p del {
-  color: #000000;
+  color: #ffffff;
 }
 .sample-text-area p u {
-  color: #000000;
+  color: #ffffff;
 }
 
 /*============== End Elements Area css ================*/
@@ -1858,11 +1858,11 @@ button:focus {
 
 .link-border {
   background: transparent;
-  border: 1px solid #000000;
-  color: #000000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 .link-border:before {
-  background: #000000;
+  background: #ffffff;
 }
 
 .radius {
@@ -3227,7 +3227,7 @@ h6 {
   }
 }
 .testimonial_area .active_testimonial .owl-dots {
-  background: #000000;
+  background: #ffffff;
   height: 25px;
   width: 100px;
   position: absolute;
@@ -3379,7 +3379,7 @@ h6 {
   background: #ffffff;
 }
 .newsletter_form .navbar-form .genric-btn:hover {
-  background-color: #000000;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
@@ -3397,10 +3397,6 @@ h6 {
     cursor: pointer;
     margin-top: 27px;
     margin-bottom: 23px;
-  }
-
-  .header_area .navbar {
-    background: #000000;
   }
 
   .navbar-toggler[aria-expanded=false] span:nth-child(2) {
@@ -3427,7 +3423,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: #000000;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -3535,7 +3531,7 @@ h6 {
   margin-right: 0px;
 }
 .social_widget .list li:hover a {
-  color: #000000;
+  color: #ffffff;
 }
 
 .copyright {
@@ -3545,7 +3541,7 @@ h6 {
   color: #000;
 }
 .copyright p a {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* End Footer Area css
