@@ -61,13 +61,12 @@
     &:after {
       position: absolute;
       left: 50%;
-      bottom: -4px;
-      height: 10px;
-      width: 10px;
+      bottom: 0;
+      height: 2px;
+      width: 100px;
       content: "";
-      background: #000000;
-      margin-left: -5px;
-      border-radius: 50%;
+      background: $primary-color;
+      margin-left: -50px;
       @media (max-width: 767px) {
         display: none;
       }
