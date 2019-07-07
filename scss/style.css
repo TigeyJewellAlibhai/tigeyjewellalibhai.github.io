@@ -13,10 +13,10 @@ Author E-mail: naimlasker@gmail.com
 
 =====================================================================*/
 /*----------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Roboto:400,500,500i");
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:700|Roboto:400,500,500i");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Medium Layout: 1280px */
@@ -60,7 +60,6 @@ h6 {
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  color: #000000;
 }
 a:hover, a:focus {
   text-decoration: none;
@@ -167,7 +166,7 @@ button:focus {
   height: 10px;
   width: 10px;
   content: "";
-  background: #e45447;
+  background: #000000;
   margin-left: -5px;
   border-radius: 50%;
 }
