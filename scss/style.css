@@ -3530,7 +3530,7 @@ h6 {
   margin-right: 0px;
 }
 .social_widget .list li:hover a {
-  color: #ffffff;
+  color: #777777;
 }
 
 .copyright {
@@ -3540,7 +3540,7 @@ h6 {
   color: #000;
 }
 .copyright p a {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* End Footer Area css
