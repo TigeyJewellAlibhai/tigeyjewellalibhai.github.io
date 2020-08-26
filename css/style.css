@@ -205,8 +205,8 @@ button:focus {
   transition: all 0.4s ease 0s;
 }
 .primary-btn:hover {
-  background: #ffffff;
-  color: #fff;
+  background: #e6e6e6;
+  color: #000000;
   border: 2px solid transparent;
 }
 
