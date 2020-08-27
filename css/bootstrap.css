@@ -6416,8 +6416,10 @@ button.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: #343a40 !important
+    background-color: #000000 !important
 }
+
+
 
 a.bg-dark:focus,
 a.bg-dark:hover,
@@ -9129,7 +9131,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #007bff !important
+    color: #000000 !important
 }
 
 a.text-primary:focus,
@@ -9138,7 +9140,7 @@ a.text-primary:hover {
 }
 
 .text-secondary {
-    color: #6c757d !important
+    color: #ffffff !important
 }
 
 a.text-secondary:focus,
