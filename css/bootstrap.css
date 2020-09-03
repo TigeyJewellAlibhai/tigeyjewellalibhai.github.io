@@ -6317,13 +6317,12 @@ button.close {
 .carousel-title {
     position: absolute;
     right: 15%;
-    bottom: 25%;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    text-align: center
+    text-align: center;
 }
 
 .align-baseline {
