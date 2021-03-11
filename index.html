@@ -49,31 +49,14 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"> <!--use submenu dropdown active-->
-								<a class="nav-link" href="portfolio.html">Portfolio</a>
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a>
 								<!--<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
 									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portrfolio Details</a>
 								</ul>-->
 							</li>
-							<li class="nav-item"><a class="nav-link" href="resume.pdf">Resume</a></li>
-							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-							<!--<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-								</ul>
-							</li>-->
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+							<li class="nav-item"><a class="nav-link" href="resume.pdf" target="blank">Resume</a></li>
 						</ul>
 					</div>
 				</div>
@@ -83,80 +66,74 @@
 	<!--================Header Menu Area =================-->
 
 	<!--================Home Banner Area =================-->
-	<!--
-	<section class="banner-area owl-carousel" id="home">
-		<div class="single_slide_banner slide_bg1">
-			<div class="container">
-				<div class="row fullscreen align-items-center">
-					<div class="banner-content col-sm-3 col-lg-12 justify-content-center">
-						<h1>Tigey Jewell-Alibhai</h1>
-						<a href="resume.pdf" class="primary-btn">See My Resume</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="single_slide_banner slide_bg2">
-			<div class="container">
-				<div class="row fullscreen d-flex align-items-center">
-					<div class="banner-content col-sm-3 col-lg-12 justify-content-center">
-						<h1>Tigey Jewell-Alibhai</h1>
-						<h3>Personal portfolio Website</h3>
-						<a href="#" class="primary-btn">Hire Me</a>
-						<a href="resume.pdf" class="primary-btn">See My Resume</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="single_slide_banner slide_bg3">
-			<div class="container">
-				<div class="row fullscreen justify-content-end-flex align-items-center">
-					<div class="banner-content col-sm-3 col-lg-12 justify-content-center">
-						<h1>Tigey Jewell-Alibhai</h1>
-						<h3>Personal portfolio Website</h3>
-						<a href="#" class="primary-btn">Hire Me</a>
-						<a href="resume.pdf" class="primary-btn">See My Resume</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
 	<section class="section_gap black-bg">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-7 col-md-7 col-sm-12 about-left">
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+				<div class="col-lg-0 col-md-0 col-sm-0 text-md-right text-center animated fadeIn">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-md-center text-center animated fadeIn">
+					<div class="main-title text-md-center text-center" style="padding-top: 6%">
+						<img src="img/banner/header2.png" class="img-fluid" width="100%">
+					</div>
+					<!--<a href="resume.pdf" class="primary-btn">View My Resume</a>-->
+				</div>
+				<div class="col-lg-0 col-md-0 col-sm-0 text-md-right text-center animated fadeIn">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 about-left">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="60000">
 						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/banner/banner-bg1.png" class="d-block w-100" alt="...">
+							<div class="carousel-item active" align="center">
+								<div class="projects_item">
+									<a href="https://youtu.be/GBYHYCf3qnc" target="blank">
+									<img src="img/works/ManticoreSummary.gif" class="img-fluid" width="100%">
+									<div class="projects_text">
+										<h4>Mini FRC 2021: Manticore</h4>
+										<p>Fully custom 1/3 scale FRC robot with modular holonomic drive. 3D printed.</p>
+									</div>
+									</a>
+								</div>
 							</div>
-							<div class="carousel-item">
-								<img src="img/banner/banner-bg2.png" class="d-block w-100" alt="...">
+							<div class="carousel-item" align="center">
+								<div class="projects_item">
+									<a href="https://www.youtube.com/watch?v=AD8C8R9dnoI" target="blank">
+									<img src="img/works/DentSummary.gif" class="img-fluid" width="100%">
+									<div class="projects_text">
+										<h4>Kraken Kinetic Sculpture</h4>
+										<p>Kinetic Sculpture with 4 bar linkage, slider, and cams designed in Solidworks.</p>
+									</div>
+									</a>
+								</div>
 							</div>
-							<div class="carousel-item">
-								<img src="img/banner/banner-bg3.png" class="d-block w-100" alt="...">
+							<div class="carousel-item" align="center">
+								<div class="projects_item">
+									<a href="https://19platta.github.io/misguided-the-game/" target="blank">
+									<img src="img/works/MisguidedSummary.gif" class="img-fluid" width="100%">
+									<div class="projects_text">
+										<h4>Misguided</h4>
+										<p>Adventure game and modular framework designed in Python</p>
+									</div>
+									</a>
+								</div>
 							</div>
-							<div class="carousel-item">
-								<img src="img/banner/banner-bg4.png" class="d-block w-100" alt="...">
-							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 					<!--<img class="img-fluid" src="img/banner/banner-bg1.png" alt="">-->
 				</div>
-				<div class="col-lg-5 col-md-5 col-sm-12 text-md-left text-center animated fadeIn">
-					<div class="main-title text-md-left text-center">
-						<h1>Hi, I'm Tigey</h1>
-					</div>
-					<a href="resume.pdf" class="primary-btn">View My Resume</a>
-				</div>
 			</div>
+			<h2 align="center">See more about me below</h2>
 		</div>
-		<div class="section_gap_bottom"></div>
 	</section>
-	<!--================End Home Banner Area =================-->
 
-	<!--================ Start Portfolio Area =================-->
-	<section class="section_gap_top section_gap_bottom portfolio_area bg-dark" id="work">
+	<!--================ Portfolio =================-->
+	<section class="section_gap_top section_gap_bottom portfolio_area bg-dark" id="projects">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-10 text-center">
@@ -415,52 +392,186 @@
 					</div>
 					</a>
 				</div>
-
-				<!--
-				<div class="col-lg-3 col-sm-6 engineering design grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/hopper1.jpg" alt="">
-						<div class="projects_text">
-							<a href="hopper-poster.pdf">
-								<h4>Olin IARC</h4>
-							</a>
-							<p>Olin's International Aerial Robotics Competition Team</p>
-						</div>
-					</div>
-				</div>
-				-->
 			</div>
 		</div>
 	</section>
-	<!--================ End Portfolio Area =================-->
 
-	<!--================ Start About Area =================-->
-	<section class="about-area section_gap black-bg">
+	<!--================ Coursework =================-->
+	<section class="section_gap_top" id="coursework">
+	<div class="row justify-content-center">
+		<div class="col-lg-8 text-center">
+			<img src="img/banner/coursework.png" class="d-block w-100" alt="...">
+			<!--<div class="main-title">
+                <h1>Latest Projects</h1>
+                <p>Hobbies, skills, and projects that I have worked on.</p>
+            </div>-->
+		</div>
+	</div>
+		<div class="whole-wrap">
+			<div class="container">
+				<div class="section-top-border">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="single-defination">
+								<h4 class="mb-20">Science</h4>
+								<p>AP Physics C Mechanics (5 on AP) <br/><br/>
+									AP Chemistry (5 on AP) <br/><br/>
+									Mechanics of Solids
+								<ul>
+									<li>Stress and strain</li>
+									<li>Finite Element Analysis</li>
+								</ul>
+								Designing Better Drugs (Biology)
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-defination">
+								<h4 class="mb-20">Mathematics</h4>
+								<p>AP BC Calculus <br/> <br/>
+									Non-Euclidean Geometry <br/> <br/>
+									Quantitative Engineering Analysis I
+								<ul>
+									<li>Linear Algebra and Eigenstuff</li>
+									<li>Multivariable Calculus</li>
+									<li>Advanced Physics</li>
+									<li>Differential Drive and Robotics</li>
+								</ul>
+								Quantitative Engineering Analysis II
+								<ul>
+									<li>1st order ODEs and Thermo</li>
+									<li>2nd order ODEs and Motion</li>
+									<li>Spectral Analysis and FFTs</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-defination">
+								<h4 class="mb-20">Multidisciplinary</h4>
+								<p> Modeling and Simulation
+								<ul>
+									<li>Python and Jupyter Notebook</li>
+									<li>Advanced Physics and Math</li>
+									<li>Models with ModSimPy</li>
+								</ul>
+								Intro to Sensors and Instrumentation
+								<ul>
+									<li>Electrical Concepts</li>
+									<li>Filters and signals</li>
+								</ul>
+								Design Nature
+								<ul>
+									<li>Bio Inspired Design</li>
+									<li>Mechanical Engineering</li>
+								</ul>
+								Products and Markets
+								<ul>
+									<li>Lean Agile Product Development</li>
+									<li>User Oriented Design</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="single-defination">
+								<h4 class="mb-20">Programming</h4>
+								<p>Intro to CS (Python) <br/><br/>
+									AP Computer Science (5 on AP)<br/><br/>
+									Intro to Software Design (Python)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--================ About =================-->
+	<section class="about-area section_gap gray-bg" id="about">
 		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<img src="img/banner/about-me.png" class="d-block w-100" alt="...">
+					<!--<div class="main-title">
+						<h1>Latest Projects</h1>
+						<p>Hobbies, skills, and projects that I have worked on.</p>
+					</div>-->
+				</div>
+			</div>
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-5 about-left">
 					<img class="img-fluid" src="img/about-img.jpg" alt="">
 				</div>
 				<div class="col-lg-6 col-md-12 about-right">
-					<div class="main-title text-left">
-						<h1>about me</h1>
-					</div>
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
+							Hi! I'm Tiger Sky Jewell-Alibhai, but everyone calls me Tigey.
 							I am 19 years old and love anything to do with Engineering and Design. I am pursuing a career in
-							Mechanical Engineering as an undergraduate at Olin College of Engineering.
-
+							Mechanical and Robotics Engineering as an undergraduate at Olin College of Engineering.
 						</p>
 						<p>
-
+							I grew up in the Algarve province of Portugal, and only moved to the US just before high school.
+							Because of my parents' work, I have travelled to many different places such as China, India, Namibia,
+							and the UK.
+						</p>
+						<p>
+							I am an avid drone & FPV enthusiast, and enjoy making and flying planes and quads. Photography, cinematography,
+							and photogrammetry with drones is also really fun, and I have a U.S. Part 107 Commercial Drone License. Whether it's
+							racing wings or a camera drone, UAVs offer unique contributions to photography and a really great inexpensive and
+							risk-free way to fly for fun.
+						</p>
+						<p>
+							Now at Olin, I have the opportunity to turn my ideas into meaningful projects and collaborate with amazing people on
+							a daily basis. I have been involved in projects from designing and building a banner towing A-tail R/C plane to designing
+							a kinetic sheet metal sculpture of a kraken ripping a boat in half to using PCA and eigenfaces to identify endangered species
+							of animals by their footprints.
 						</p>
 					</div>
-					<a href="about-us.html" class="primary-btn">More Info</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End About Area =================-->
+
+	<!--================ Contact ================-->
+	<section class="contact_area section_gap bg-dark">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<img src="img/banner/contact-me.png" class="d-block w-100" alt="...">
+					<!--<div class="main-title">
+						<h1>Latest Projects</h1>
+						<p>Hobbies, skills, and projects that I have worked on.</p>
+					</div>-->
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-3">
+					<div class="contact_info text-secondary">
+						<div class="info_item">
+							<i class="lnr lnr-user"></i>
+							<h6 class="text-secondary">Tiger Sky Jewell-Alibhai</h6>
+							<p></p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-home "></i>
+							<h6 class="text-secondary">Durham, North Carolina</h6>
+							<p></p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-envelope"></i>
+							<h6 class="text-secondary">talibhai@olin.edu</h6>
+							<p>If you have any questions, please don't hesitate to contact me!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!--================ Start Testimonial Area =================-->
 	<!--
