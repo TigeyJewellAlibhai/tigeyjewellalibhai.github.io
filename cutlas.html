@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>CUTLAS</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================Header Menu Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================Header Menu Area =================-->
+
+	<!--================ About Banner Area ======s===========-->
+	<section class="section_gap_top">
+		<div class=" row justify-content-left">
+			<div class="col-lg-12 d-flex h-100">
+				<img src="img/cutlas/cutlas.png" class="d-block w-100" alt="...">
+			</div>
+		</div>
+	</section>
+	<!--================End About Banner Area =================-->
+
+	<!--================ Start About Area =================-->
+	<section class="about-area section_gap gray-bg">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-12 col-md-12 about-left">
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
+					<div align="center" class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<h4>
+							CUTLAS is a project that I have been slowly developing over the past couple of years. The ultimate goal is to create
+							a sub 250g RC aircraft that can be launched out of a tube and folded for storage. Over multiple iterations, I have 
+							refined the design to be more capable and it is currently almost flyable.
+						</h4>
+
+						<h5><a href=https://cad.onshape.com/documents/2fa4192654db76dd3e3aa028/w/f47d39fe2d2a347cbdca6b2b/e/16001c9ac02c1c1d92ec33d7?renderMode=0&uiState=639e0f4022dd5c212892c894>View My CAD Files Here</a></h5>
+					</div>
+				</div>
+
+				<div class="section_gap_top col-lg-12 col-md-12 about-left">
+
+				</div>
+
+
+				<div class="col-lg-6 col-md-12 about-left">
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<h2>MK1: Initial Canard Design</h2>
+						<h6>05/29/2021</h6>
+						<br>
+						<p>
+							CUTLAS MK1 was a technology demonstrator for wing folding and control surface actuation. The initial design 
+							uses a canard wing setup, with the main wings at the back, and smaller canards at the front. The reason for
+							this choice was to help 'lock' the wings into position as the fold out. Since the wings swing out backward,
+							once they are fully extended they can simply reach a hard limit and the drag forces in flight will tend to
+							hold them in place, so no lock is required. 
+						</p>
+						<p>
+							Because the design was tube shaped, the intial choice for propulsion was an electric ducted fan (EDF). This seemed
+							to fit the design as EDFs need to fly fast to be efficient. Unfortunately, there are two considerable problems with
+							this design.
+						</p>
+						<p>
+							To fit inside a tube, the wing chord must be no larger than the diameter of the tube, and the half wingspan must
+							be no longer than the tube itself. This ends up creating relatively small wings, which mean that the plane would
+							need to fly very fast to stay in the air. While not necessarily a problem, I wanted to be able to test the plane
+							on small fields, which is difficult with a very fast plane.
+						</p>
+						<p>
+							Canard planes are notorius for being hard to control, and this configuration also suffered from a difficult CG,
+							as many of the required electronics were very far in the back of the plane. In addition, the total mass was far
+							too high and resulted in incredibly high wing loading.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 about-right section_gap_top">
+					<img class="img-fluid" src="img/cutlas/mk1.gif" alt="">
+				</div>
+
+				<div class="col-lg-5 about-left section_gap_top">
+					<img class="img-fluid" src="img/cutlas/mk1.5.jpg" alt="">
+				</div>
+
+
+				<div class="col-lg-6 col-md-12 about-right section_gap_top">
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<h2>MK1.5: Flight Test Demonstrator</h2>
+						<h6>08/16/2021</h6>
+						<br>
+						<p>
+							After MK1 proved unflyable, I wanted to test the fuselage with a simple foamboard wing design to better understand
+							characteristics at this scale and how well the electronics performed. I swapped the folding wings for a set of simple
+							foamboard wings with carbon fiber spars running through. It might not be pretty, but at least it looked like it might
+							fly!
+						</p>
+						<p>
+							Unfortunately the design was still too heavy and underpowered with the EDF. I decided that moving forward, I would 
+							abandon the EDF and move to conventional propellers.
+						</p>
+						<p>
+							It is worth noting at this point that I am using two 6mm carbon booms that go the length of the aircraft and act as hardpoints
+							to mount everything to. These ended up being quite flimsy and I broke several throughout testing of MK1.5.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="col-lg-6 col-md-12 about-right section_gap_top">
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<h2>MK2: Definitely Not A Kite</h2>
+						<h6>07/13/2022</h6>
+						<br>
+						<p>
+							At this point, the only was to create a small, relatively slow, and low weight tube launch RC plane seemed to be by adding
+							flexible wings. I chose coated ripstop nylon (commonly used on kites) because of the very light weight and price. This would
+							allow me to create relatively large wings that could just fold up without worrying about tube dimensions.
+						</p>
+						<p>
+							The flexible wing design solved a lot of problems. High wing area was possible for very little added mass. However, several new
+							problems were introduced. Moving away from a canard design to a conventional v-tail meant that the wings would have to be held 
+							forward entirely by the elastic. Mantaining strong enough elasic proved to be difficult and many flight tests resulted in the wings
+							folding mid flight or very large vibrations. Control surfaces also proved challenging. The way I set up ailerons and v-tail surfaces
+							was by having a servo at the root trailing edge that kept the surface in tension and could pivot up or down. This appeared fine on the
+							ground but seemed to have no effect in the air, potentially due to the tension not being high enough or the wing deforming in
+							unexpected ways.
+						</p>
+						<p>
+							I decided to switch the two thing carbon spars for a single square cross-section carbon fiber rod. Although slightly heavier,
+							this was so much more rigid, and I have yet to be able to break one (and not for lack of trying!). The square cross section
+							means that any parts that are mounted are at very little risk of twisting compared to a circular tube.
+						</p>
+						<p>
+							MK2 was able to fly several times for a few seconds! However it was uncontrollable in the air and the wings would fold back at high speed.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-6 about-left section_gap_top">
+					<img class="img-fluid" src="img/cutlas/mk2.gif" alt="">
+				</div>
+
+				<div class="col-lg-3 about-left section_gap_top">
+					<img class="img-fluid" src="img/cutlas/mk3.gif" alt="">
+				</div>
+
+				<div class="col-lg-3 about-left section_gap_top">
+					<img class="img-fluid" src="img/cutlas/mk3.jpg" alt="">
+				</div>
+
+				<div class="col-lg-6 col-md-12 about-right section_gap_top">
+					<!--<div class="main-title text-left">
+						<h1>who i am</h1>
+					</div>-->
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+						<h2>MK3: More Wing = More Up</h2>
+						<h6>12/17/2022</h6>
+						<br>
+						<p>
+							MK3 has drastically more wing area than MK2. This should help a flexible wing perform well, since it doesn't have a natural airfoil
+							that can be made with a solid wing. The other large change to mk3 is that the entire wing and tail surfaces pivot up and down to act
+							as control surfaces. This is important for a couple of reasons.
+						</p>
+						<p>
+							The lack of control authority in MK2 would hopefully be fixed by making the tail a v-tail stabilator design. Although the v-tail has
+							limied throw because the two surfaces can intersect, the ~20 degree throw should be plenty for control. Since the main wing also fully
+							pivot on separate servos, I can get aileron control but also (crucially) angle of attack can be varied. MK2 may well have had problems with
+							AoA as the flexible wings would not create lift in a neutral AoA. Just by throwing both like gliders, the difference in lift force was like 
+							night and day.
+						</p>
+						<p>
+							To allow the wings to pivot up and down on a servo in addition to folding back, the folding mechanism was miniaturized and put on a pivot which
+							could then be controlled by the servo through a pushrod. Unfotunately, this miniaturization meant that the elastic keeping the wings out had very
+							little moment arm. The wings would easily fold back and the plane would drop from the sky. I tried using thicker elastic but ultimately the mechanism
+							needs a redesign to give the elastic a larger moment arm.
+						</p>
+						<p>
+							MK3 is still a work in progress and shows promise of flying soon! While I was hoping to redesign and test by the end of the semester, I recently got
+							covid and will have another update by January!
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!--================ End About Area =================-->
+
+	<!--<section>
+		<div class="section-top-border bg-dark">
+			<div class="row gallery-item text-secondary text-center">
+				<div class="col-md-6">
+					<img src="img/swarm-ex/upper.png" class="d-block w-100" alt="...">
+					<p>Upper structure of the CubeSat, made from <br> 6061 aluminum. The cover can be detached <br> to access modules.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/swarm-ex/lower.png" class="d-block w-100" alt="...">
+					<p>The lower structure houses the propulsion <br> module and is also made of 6061.</p>
+				</div>
+				<div class="col-md-12"></div>
+				<div class="col-md-4">
+					<img src="img/swarm-ex/inside.png" class="d-block w-100" alt="...">
+					<p>The inside of the CubeSat has many modules <br> that fit compactly together.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/swarm-ex/drawing.png" class="d-block w-100 img-fluid" alt="...">
+					<p>The CubeSat was machined according to <br> mechanical drawings that we made.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/swarm-ex/external.png" class="d-block w-100" alt="...">
+					<p> Both structures have light weighting <br> and room to mount antennas.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>-->
+
+	<section>
+		<div class="whole-wrap">
+			<div class="container">
+				<div class="section-top-border">
+					<div class="row">
+						<div class="col-lg-12">
+							<blockquote class="generic-blockquote">
+								"This isn't flying, it's falling with style"
+							</blockquote>
+							<p align="right">
+								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ Start Testimonial Area =================-->
+	<!--<div class="section_gap testimonial_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 text-left">
+					<div class="active_testimonial owl-carousel" data-slider-id="1">
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her face</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<div class="testimonial_logos">
+						<div class="top_logos">
+							<img src="img/brands/logo1.png" alt="">
+							<img src="img/brands/logo2.png" alt="">
+						</div>
+						<div class="mid_logo">
+							<img src="img/brands/logo3.png" alt="">
+						</div>
+						<div class="bottom_logos jus">
+							<img src="img/brands/logo4.png" alt="">
+							<img src="img/brands/logo5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Testimonial Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area section_gap">
+		<div class="container">
+			<div class="row footer_inner justify-content-center">
+				<div class="col-lg-6 text-center">
+					<aside class="f_widget social_widget">
+						<div class="f_logo">
+							<img src="img/logo.png" alt="">
+						</div>
+						<div class="f_title">
+							<h4>Follow Me</h4>
+						</div>
+						<ul class="list">
+							<li><a href="https://www.facebook.com/profile.php?id=100009292706058" target="blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/TigeyA" target="blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/tiger-jewell-alibhai-aa22a316a/" target="blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/TigeyJewellAlibhai" target="blank"><i class="fa fa-github"></i></a></li>
+
+						</ul>
+					</aside>
+					<div class="copyright">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
