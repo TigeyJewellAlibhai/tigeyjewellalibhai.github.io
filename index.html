@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="scss/style.css">
 </head>
 
 <body>
@@ -168,15 +168,15 @@
 
 			<div class="row justify-content-center">
 
-				<div class="col-lg-4 col-sm-6 padcard">
-					<img class="img-fluid" src="img/upcoming/pixie.png" alt="Card image cap">
-				</div>
-				<div class="col-lg-4 col-sm-6 padcard" href=cutlas.html>
+				<a href="https://uav-control.github.io/" class="col-lg-4 col-sm-6 padcard">
+					<img class="img-fluid" src="img/upcoming/pixie.png"  alt="Card image cap">
+				</a>
+				<a href=cutlas.html class="col-lg-4 col-sm-6 padcard">
 					<img class="img-fluid"  src="img/upcoming/cutlas.png" alt="Card image cap">
-				</div>
-				<div class="col-lg-4 col-sm-6 padcard">
-					<img class="img-fluid" src="img/upcoming/sparrowhawk.png" alt="Card image cap">
-				</div>
+				</a>
+				<a href="#" class="col-lg-4 col-sm-6 padcard">
+					<img class="img-fluid" src="img/upcoming/magnetar.png"  alt="Card image cap">
+				</a>
 			</div>
 		</div>
 	</section>
@@ -211,60 +211,102 @@
 				<div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>-->
 			<div class="row justify-content-center">
 
-				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
-						<img class="card-img-top" src="img/ascent/spirit_3.jpg" alt="Card image cap">
-						<div class="card-body">
-					  		<h5 class="card-title">Ascent Aerosystems</h5>
-					  		<p class="card-text">Engneering intern designing and testing coaxial UAVs</p>
-					  		<a href="ascent.html" class="btn btn-secondary">Learn More</a>
+				<div class="col-lg-12 col-sm-12" >
+					<article class="postcard light blue">
+						<div class="postcard__img_link">
+							<img class="postcard__img" src="img/ascent/spirit_3.jpg" alt="Image Title" />
 						</div>
-					</div>
+						<div class="postcard__text t-dark">
+							<h1 class="postcard__title blue">Ascent Aerosystems</h1>
+							<div class="postcard__subtitle small">
+								<time datetime="2020-05-25 12:00:00">
+									Summer 2022
+								</time>
+							</div>
+							<div class="postcard__bar"></div>
+							<div class="postcard__preview-txt">Over Summer 2022, I was an engneering intern designing and testing coaxial UAVs. This involved mechanical design, electrical integration, and flight testing.</div>
+							<ul class="postcard__tagbox">
+								<li class="tag__item blue">
+									<a href="ascent.html">Learn More</a>
+								</li>
+								<li class="tag__item blue">
+									<a href="https://ascentaerosystems.com/">Company Website</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="postcard light red">
+						<div class="postcard__img_link">
+							<img class="postcard__img" src="img/works/dbf1.png" alt="Image Title" />
+						</div>
+						<div class="postcard__text t-dark">
+							<h1 class="postcard__title blue">Olin College Design Build Fly</h1>
+							<div class="postcard__subtitle small">
+								<time datetime="2020-05-25 12:00:00">
+									2019-2023
+								</time>
+							</div>
+							<div class="postcard__bar"></div>
+							<div class="postcard__preview-txt">I was Project Manager for Olin College's entry in the 2022 AIAA DBF competition. We placed 15th of over 100 teams with a 7ft wingspan composite wing RC aircraft.</div>
+							<ul class="postcard__tagbox">
+								<li class="tag__item blue">
+									<a href="https://www.olindbf.com/">Team Website</a>
+								</li>
+								<li class="tag__item blue">
+									<a href="https://www.youtube.com/watch?v=3GahRhWaBnU">2023 Video</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="postcard light green">
+						<div class="postcard__img_link">
+							<img class="postcard__img" src="img/swarm-ex/logo.png" alt="Image Title" />
+						</div>
+						<div class="postcard__text t-dark">
+							<h1 class="postcard__title blue">OSSTP SWARM-Ex Cubesat</h1>
+							<div class="postcard__subtitle small">
+								<time datetime="2020-05-25 12:00:00">
+									Summer 2021
+								</time>
+							</div>
+							<div class="postcard__bar"></div>
+							<div class="postcard__preview-txt">I was a mechanical engineer on the SWARM-Ex Cubesat project. This involved collaboration to create a cubesat frame capable of housing and interfacing equipment being designed by many different universities.</div>
+							<ul class="postcard__tagbox">
+								<li class="tag__item blue">
+									<a href="https://www.osstp.org/swarm-ex">Project Website</a>
+								</li>
+								<li class="tag__item blue">
+									<a href="swarm-ex.html">Learn More</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
-						<img class="card-img-top" src="img/works/olin_dbf.jpg" alt="Card image cap">
-						<div class="card-body">
-					  		<h5 class="card-title">Olin DBF</h5>
-					  		<p class="card-text">I am Project Manager at Olin's AIAA Design Build Fly Team</p>
-					  		<a href="https://www.olindbf.com/home" target="blank" class="btn btn-secondary">Learn More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
-						<img class="card-img-top" src="img/works/swarm-ex.png" alt="Card image cap">
-						<div class="card-body">
-					  		<h5 class="card-title">SWARM-EX: CubeSat</h5>
-					  		<p class="card-text">Inter university project to design swarming cubesats</p>
-					  		<a href="swarm-ex.html" class="btn btn-secondary">Learn More</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="practical-scientific.html">
 						<img class="card-img-top" src="img/works/practical-scientific.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Practical Scientific</h5>
-					  		<p class="card-text">An internship in mechanical design, creativity, and research</p>
-					  		<a href="practical-scientific.html" class="btn btn-secondary">Learn More</a>
+							  <h5 class="text-tertiary">Practical Scientific</h5>
+							  <p class="text-tertiary">An internship in mechanical design, creativity, and research</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
-				<div class="col-lg-4 col-sm-6 padcard">
+				<div class="col-lg-4 col-sm-6 padcard" >
 					<div class="card">
 						<img class="card-img-top" src="img/works/oregon_project1.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Geophysics Research Project</h5>
-					  		<p class="card-text">Mapping with UAVs and surface instruments in Oregon</p>
-					  		<!--<a href="" class="btn btn-secondary">Learn More</a>-->
+							  <h5 class="text-tertiary">Geophysics Research Project</h5>
+							  <p class="text-tertiary">Mapping with UAVs and surface instruments in Oregon</p>
 						</div>
 					</div>
 				</div>
+
+				
 				
 				
 			</div>
@@ -278,191 +320,184 @@
 			<div class="row justify-content-center">
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="sparrowhawk.pdf">
+						<img class="card-img-top" src="img/works/sparrowhawk.png" alt="Card image cap">
+						<div class="card-body">
+					  		<h5 class="text-tertiary">Sparrowhawk</h5>
+					  		<p class="text-tertiary">Variable wing sweep prototype to validate CFD efficiency optimization.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 padcard">
+					<a class="card" href="https://olincollege.github.io/pie-2021-03/Armadillo/">
 						<img class="card-img-top" src="img/works/armadillo.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Armadillo: Jenga Stacking Robot</h5>
-					  		<p class="card-text">Palletizing robot arm with vacuum and computer vision to stack Jenga.</p>
-					  		<a href="https://olincollege.github.io/pie-2021-03/Armadillo/" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Armadillo: Jenga Stacking Robot</h5>
+					  		<p class="text-tertiary">Palletizing robot arm with vacuum and computer vision to stack Jenga.</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="manticore.pdf" target="blank">
 						<img class="card-img-top" src="img/works/manticore.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Mini FRC 2021: Manticore</h5>
-					  		<p class="card-text">Fully custom 1/3 scale FRC robot with modular holonomic drive. 3D printed.</p>
-					  		<a href="manticore.pdf" target="blank" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Mini FRC 2021: Manticore</h5>
+					  		<p class="text-tertiary">Fully custom 1/3 scale FRC robot with modular holonomic drive. 3D printed.</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="sidewinder.pdf" target="blank">
 						<img class="card-img-top" src="img/works/sidewinder.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Sidewinder</h5>
-					  		<p class="card-text">Carbon Fiber Tube winding machine and project to test different tube structures.</p>
-					  		<a href="sidewinder.pdf" target="blank" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Sidewinder</h5>
+					  		<p class="text-tertiary">Carbon Fiber Tube winding machine and project to test different tube structures.</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="wood-house.pdf" target="blank">
 						<img class="card-img-top" src="img/works/wood_house.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Hand Crafted Wooden House</h5>
-					  		<p class="card-text">Scale model of my childhood house, with internal lighting</p>
-					  		<a href="wood-house.pdf" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Hand Crafted Wooden House</h5>
+					  		<p class="text-tertiary">Scale model of my childhood house, with internal lighting</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://tigeysky.wixsite.com/fribsee" target="blank">
 						<img class="card-img-top" src="img/works/fribsee.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Frisbee Tracker</h5>
-					  		<p class="card-text">Disc mounted sensor to help monitor throws and improve your game</p>
-					  		<a href="https://tigeysky.wixsite.com/fribsee" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Frisbee Tracker</h5>
+					  		<p class="text-tertiary">Disc mounted sensor to help monitor throws and improve your game</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://19platta.github.io/misguided-the-game/" target="blank">
 						<img class="card-img-top" src="img/works/misguided.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Misguided: The Game</h5>
-					  		<p class="card-text">Adventure pygame with focus on code modularity and engine design for future projects</p>
-					  		<a href="https://19platta.github.io/misguided-the-game/" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Misguided: The Game</h5>
+					  		<p class="text-tertiary">Adventure pygame with focus on code modularity and engine design for future projects</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://github.com/TigeyJewellAlibhai/rocket_regression" target="blank">
 						<img class="card-img-top" src="img/works/rocket_regression.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Rocket Regression</h5>
-					  		<p class="card-text">An Analysis of Factors Correlated to Mission Success</p>
-					  		<a href="https://github.com/TigeyJewellAlibhai/rocket_regression" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Rocket Regression</h5>
+					  		<p class="text-tertiary">An Analysis of Factors Correlated to Mission Success</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="hopper-poster.pdf" target="blank">
 						<img class="card-img-top" src="img/works/hopper1.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">ZEUS IV: Modular Hopper</h5>
-					  		<p class="card-text">Designing a small mechanical jumping device with a delay</p>
-					  		<a href="hopper-poster.pdf" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">ZEUS IV: Modular Hopper</h5>
+					  		<p class="text-tertiary">Designing a small mechanical jumping device with a delay</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/watch?v=fLKxVQO7gsM" target="blank">
 						<img class="card-img-top" src="img/works/neato.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Differential Drive</h5>
-					  		<p class="card-text">Programming a robot to navigate a spline using ROS, MATLAB, and Gazebo</p>
-					  		<a href="https://www.youtube.com/watch?v=fLKxVQO7gsM" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Differential Drive</h5>
+					  		<p class="text-tertiary">Programming a robot to navigate a spline using ROS, MATLAB, and Gazebo</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/watch?v=O-SQXXThXZY" target="blank">
 						<img class="card-img-top" src="img/works/mortal_clawmbat.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Olin Team ShellSwitch</h5>
-					  		<p class="card-text">Designing, building, and testing a play experience for 4th graders</p>
-					  		<a href="https://www.youtube.com/watch?v=O-SQXXThXZY" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Olin Team ShellSwitch</h5>
+					  		<p class="text-tertiary">Designing, building, and testing a play experience for 4th graders</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/watch?v=AD8C8R9dnoI" target="blank">
 						<img class="card-img-top" src="img/works/the_maw.png" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Kinetic Sculpture</h5>
-					  		<p class="card-text">Designing and CADing a kinetic sculpture using sheet metal, wood and plastic parts</p>
-					  		<a href="https://www.youtube.com/watch?v=AD8C8R9dnoI" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Kinetic Sculpture</h5>
+					  		<p class="text-tertiary">Designing and CADing a kinetic sculpture using sheet metal, wood and plastic parts</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href=eigenvector-footprints.pdf target="blank">
 						<img class="card-img-top" src="img/works/footprint.JPG" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Footprint PCA</h5>
-					  		<p class="card-text">Designing an algorithm based on eigenfaces to identify
+					  		<h5 class="text-tertiary">Footprint PCA</h5>
+					  		<p class="text-tertiary">Designing an algorithm based on eigenfaces to identify
 								endangered animals by their footprints</p>
-					  		<a href=eigenvector-footprints.pdf target="blank" class="btn btn-secondary">Learn More</a>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/watch?v=wyim3uhC03k" target="blank">
 						<img class="card-img-top" src="img/works/atlas.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Mini FRC: Atlas</h5>
-					  		<p class="card-text">Off-Season FRC Project using lego mindstorms to build a scale FRC robot</p>
-					  		<a href="https://www.youtube.com/watch?v=wyim3uhC03k" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Mini FRC: Atlas</h5>
+					  		<p class="text-tertiary">Off-Season FRC Project using lego mindstorms to build a scale FRC robot</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://6502.team/" target="blank">
 						<img class="card-img-top" src="img/works/robotics.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Robotics: Team 6502 DARC SIDE</h5>
-					  		<p class="card-text">High School FRC Captain & Dean's List Semifinalist</p>
-					  		<a href="https://6502.team/" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Robotics: Team 6502 DARC SIDE</h5>
+					  		<p class="text-tertiary">High School FRC Captain & Dean's List Semifinalist</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="origami.html" target="blank">
 						<img class="card-img-top" src="img/works/origami_eagle.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">Origami</h5>
-					  		<p class="card-text">A hobby involving art, engineering, and math</p>
-					  		<a href="origami.html" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">Origami</h5>
+					  		<p class="text-tertiary">A hobby involving art, engineering, and math</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/watch?v=VKiGcy2wHus" target="blank">
 						<img class="card-img-top" src="img/works/wing.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">A Bird's Eye View</h5>
-					  		<p class="card-text">FPV, Wings, and Racing Quads</p>
-					  		<a href="https://www.youtube.com/watch?v=VKiGcy2wHus" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">A Bird's Eye View</h5>
+					  		<p class="text-tertiary">FPV, Wings, and Racing Quads</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-4 col-sm-6 padcard">
-					<div class="card">
+					<a class="card" href="https://www.youtube.com/channel/UC_sgnpqoXAf9Djewbf4U96g?view_as=subscriber" target="blank">
 						<img class="card-img-top" src="img/works/green_dolphin.jpg" alt="Card image cap">
 						<div class="card-body">
-					  		<h5 class="card-title">GREEN DOLPHIN MUSIC</h5>
-					  		<p class="card-text">Jazz Music Videos On Location</p>
-					  		<a href="https://www.youtube.com/channel/UC_sgnpqoXAf9Djewbf4U96g?view_as=subscriber" target="blank" class="btn btn-secondary">Learn More</a>
+					  		<h5 class="text-tertiary">GREEN DOLPHIN MUSIC</h5>
+					  		<p class="text-tertiary">Jazz Music Videos On Location</p>
 						</div>
-					</div>
+					</a>
 				</div>
 				
 			</div>
@@ -614,13 +649,9 @@
 	<!--================ Contact ================-->
 	<section class="contact_area section_gap bg-dark">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center"style="padding-bottom: 5%">
 				<div class="col-lg-10 text-center">
-					<img src="img/banner/contact-me.png" class="d-block w-100" alt="...">
-					<!--<div class="main-title">
-						<h1>Latest Projects</h1>
-						<p>Hobbies, skills, and projects that I have worked on.</p>
-					</div>-->
+					<h1 class="text-secondary">Contact Me</h1>
 				</div>
 			</div>
 			<div class="row justify-content-center">
