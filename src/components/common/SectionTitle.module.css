@@ -1,0 +1,23 @@
+.block {
+  margin-bottom: 1.5rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  color: var(--text);
+}
+
+.subtitle {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+.centered .subtitle {
+  margin-left: auto;
+  margin-right: auto;
+}

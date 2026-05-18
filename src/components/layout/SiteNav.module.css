@@ -1,0 +1,286 @@
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  padding: 0 0 0.45rem;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.overlayFrame {
+  padding: 0 0 0.35rem;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+
+.overlayNoFlow {
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  height: 0;
+  overflow: visible;
+}
+
+.bar {
+  position: relative;
+  width: min(50vw, 500px);
+  min-height: 3.45rem;
+  isolation: isolate;
+  cursor: pointer;
+  outline: none;
+  transition: width 240ms ease, min-height 240ms ease;
+  pointer-events: auto;
+}
+
+.compactWidth {
+  width: min(36vw, 360px);
+}
+
+.bar:focus-visible {
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.45);
+  border-radius: 0.65rem;
+}
+
+.projectBar {
+  width: min(36vw, 360px);
+  min-height: 2.8rem;
+}
+
+.barShape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.barPath {
+  stroke: none;
+  transition: fill 420ms ease;
+}
+
+.dark .barPath {
+  fill: #0b0b0f;
+}
+
+.light .barPath {
+  fill: #f8fafc;
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.05rem;
+  pointer-events: none;
+}
+
+.projectBar .content {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0;
+}
+
+.sideLabel {
+  position: relative;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  font-size: 0.95rem;
+  justify-self: center;
+  transition: color 420ms ease, font-size 240ms ease;
+}
+
+.dark .sideLabel {
+  color: #ffffff;
+}
+
+.light .sideLabel {
+  color: #0f172a;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.58rem;
+  width: 2.7rem;
+  height: 0.26rem;
+  border-radius: 999px;
+  transition: background-color 420ms ease;
+}
+
+.dark .active::after {
+  background: #ffffff;
+}
+
+.light .active::after {
+  background: #0f172a;
+}
+
+.centerBadge,
+.centerButton {
+  width: 3.15rem;
+  height: 3.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 240ms ease, height 240ms ease;
+}
+
+.projectBar .centerButton {
+  width: 2.55rem;
+  height: 2.55rem;
+}
+
+.centerBadge {
+  background: transparent;
+  perspective: 700px;
+}
+
+.centerButton {
+  background: transparent;
+  border: none;
+}
+
+.iconFlip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transition: transform 420ms ease;
+}
+
+.flipToNext {
+  transform: rotateY(180deg);
+}
+
+.centerImage {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: width 240ms ease, height 240ms ease;
+}
+
+.iconFaceBack {
+  transform: rotateY(180deg);
+}
+
+.returnIcon {
+  font-size: 2rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 420ms ease;
+}
+
+.dark .returnIcon {
+  color: #ffffff;
+}
+
+.light .returnIcon {
+  color: #111827;
+}
+
+.dark.switching .barPath {
+  fill: #f8fafc;
+}
+
+.light.switching .barPath {
+  fill: #0b0b0f;
+}
+
+.dark.switching .sideLabel,
+.dark.switching .returnIcon {
+  color: #0f172a;
+}
+
+.light.switching .sideLabel,
+.light.switching .returnIcon {
+  color: #ffffff;
+}
+
+.dark.switching .active::after {
+  background: #0f172a;
+}
+
+.light.switching .active::after {
+  background: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .bar {
+    width: min(72vw, 500px);
+    min-height: 3.15rem;
+  }
+
+  .compactWidth {
+    width: min(54vw, 360px);
+  }
+
+  .projectBar {
+    width: min(52vw, 360px);
+    min-height: 2.55rem;
+  }
+
+  .content {
+    padding: 0 0.9rem;
+  }
+
+  .projectBar .content {
+    padding: 0;
+  }
+
+  .sideLabel {
+    font-size: 0.86rem;
+  }
+
+  .active::after {
+    bottom: -0.52rem;
+    width: 2.35rem;
+    height: 0.22rem;
+  }
+
+  .centerBadge,
+  .centerButton {
+    width: 2.85rem;
+    height: 2.85rem;
+  }
+
+  .projectBar .centerButton {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .centerImage {
+    width: 2.55rem;
+    height: 2.55rem;
+  }
+
+  .projectBar .centerImage {
+    width: 1.95rem;
+    height: 1.95rem;
+  }
+
+  .returnIcon {
+    font-size: 1.7rem;
+  }
+}

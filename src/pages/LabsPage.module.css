@@ -1,0 +1,31 @@
+.heroBand {
+  background: #000000;
+}
+
+.intro {
+  margin: 1rem 0 0;
+  color: #e5e7eb;
+  max-width: 58rem;
+}
+
+.projectsHeading {
+  margin-bottom: 4.5rem;
+}
+
+.sectionGap {
+  margin-top: 6rem;
+}
+
+.pageTopPad {
+  padding-top: 7.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .sectionGap {
+    margin-top: 4.5rem;
+  }
+
+  .pageTopPad {
+    padding-top: 5.5rem !important;
+  }
+}

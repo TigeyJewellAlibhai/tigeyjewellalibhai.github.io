@@ -1,0 +1,62 @@
+.viewer {
+  height: 100%;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.75rem;
+  background: #111827;
+}
+
+.stack {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+}
+
+.pageShell {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.pageCanvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+.linkLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.pdfLink {
+  position: absolute;
+  display: block;
+  pointer-events: auto;
+  background: transparent;
+}
+
+.pageLoading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.42);
+  pointer-events: none;
+}
+
+.status {
+  margin: 0 0 0.75rem;
+  color: #e5e7eb;
+}
+
+.status a {
+  color: #93c5fd;
+}

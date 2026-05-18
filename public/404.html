@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TigrisLabs</title>
+    <script>
+      // Redirect unknown paths to index.html while preserving the intended route.
+      // This is required for BrowserRouter on GitHub Pages.
+      ;(function () {
+        const pathSegmentsToKeep = 0
+        const location = window.location
+        const newPath =
+          location.protocol +
+          '//' +
+          location.hostname +
+          (location.port ? ':' + location.port : '') +
+          location.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          location.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (location.search ? '&' + location.search.slice(1).replace(/&/g, '~and~') : '') +
+          location.hash
+
+        window.location.replace(newPath)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>

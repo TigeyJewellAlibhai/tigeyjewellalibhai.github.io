@@ -1,0 +1,45 @@
+.tile {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--project-card-border, var(--line));
+  border-radius: 0.75rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.body {
+  padding: 0.95rem;
+  background: var(--project-card-body-bg, transparent);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--project-card-title, inherit);
+}
+
+.header span {
+  color: var(--project-card-year, var(--muted));
+  font-size: 0.9rem;
+}
+
+.body p {
+  margin: 0.6rem 0 0;
+  color: var(--project-card-copy, var(--muted));
+}

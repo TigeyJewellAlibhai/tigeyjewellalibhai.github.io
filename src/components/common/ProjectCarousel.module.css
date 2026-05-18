@@ -1,0 +1,364 @@
+.carousel {
+  --carousel-center-width: clamp(17.5rem, 52vw, 30rem);
+  --carousel-side-width: clamp(12.5rem, 39vw, 23rem);
+  --carousel-side-offset: clamp(2.2rem, 8.5vw, 7rem);
+  --carousel-side-center-shift: calc((var(--carousel-side-width) / 2) + var(--carousel-side-offset));
+  --carousel-side-top: clamp(1.05rem, 1.45vw, 1.35rem);
+  --carousel-side-scale: 0.88;
+  --carousel-reflection-opacity: 0.26;
+  --carousel-card-radius: 0.38rem;
+}
+
+.activeInfo {
+  text-align: center;
+  margin: 0 auto 1.55rem;
+  max-width: 48rem;
+}
+
+.activeYear {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+.activeInfo h3 {
+  margin: 0.45rem 0 0;
+  font-size: clamp(1.45rem, 2.6vw, 2.15rem);
+}
+
+.activeDescription {
+  margin: 0.62rem auto 0;
+  color: var(--muted);
+  max-width: 44rem;
+}
+
+.stage {
+  position: relative;
+  perspective: 1400px;
+  min-height: clamp(14.5rem, 43vw, 21rem);
+  padding-inline: clamp(0.35rem, 1vw, 0.9rem);
+}
+
+.stageLayer {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.stageTransitioning {
+  pointer-events: none;
+}
+
+.stageLayerNonInteractive {
+  pointer-events: none;
+}
+
+.stageLayerCenterOnly .sideCard {
+  display: none;
+}
+
+.stageLayerSidesOnly .centerCard {
+  display: none;
+}
+
+.stageLayerIncoming {
+  z-index: 4;
+}
+
+.stageLayerOutgoing {
+  z-index: 2;
+}
+
+.stageLayerIncomingRight {
+  animation: carouselLayerInRight 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stageLayerOutgoingRight {
+  animation: carouselLayerOutRight 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stageLayerIncomingLeft {
+  animation: carouselLayerInLeft 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stageLayerOutgoingLeft {
+  animation: carouselLayerOutLeft 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes carouselLayerInRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carouselLayerOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carouselLayerInLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carouselLayerOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.stageLayerIncomingRight .centerCard {
+  transform-origin: left center;
+  animation: incomingFromRightFlatten 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stageLayerIncomingLeft .centerCard {
+  transform-origin: right center;
+  animation: incomingFromLeftFlatten 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.stageLayerOutgoingRight .centerCard {
+  transform-origin: right center;
+  animation: outgoingToLeftTilt 460ms cubic-bezier(0.24, 0.86, 0.3, 1) both;
+}
+
+.stageLayerOutgoingLeft .centerCard {
+  transform-origin: left center;
+  animation: outgoingToRightTilt 460ms cubic-bezier(0.24, 0.86, 0.3, 1) both;
+}
+
+@keyframes incomingFromRightFlatten {
+  from {
+    width: var(--carousel-side-width);
+    transform:
+      translateY(var(--carousel-side-top))
+      translateX(var(--carousel-side-center-shift))
+      scale(var(--carousel-side-scale))
+      perspective(950px)
+      rotateY(-23deg)
+      rotateZ(0.7deg);
+  }
+
+  to {
+    width: var(--carousel-center-width);
+    transform: translateX(0) scale(1) perspective(950px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes incomingFromLeftFlatten {
+  from {
+    width: var(--carousel-side-width);
+    transform:
+      translateY(var(--carousel-side-top))
+      translateX(calc(-1 * var(--carousel-side-center-shift)))
+      scale(var(--carousel-side-scale))
+      perspective(950px)
+      rotateY(23deg)
+      rotateZ(-0.7deg);
+  }
+
+  to {
+    width: var(--carousel-center-width);
+    transform: translateX(0) scale(1) perspective(950px) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes outgoingToLeftTilt {
+  from {
+    width: var(--carousel-center-width);
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1) perspective(950px) rotateY(0deg) rotateZ(0deg);
+  }
+
+  82% {
+    opacity: 1;
+  }
+
+  to {
+    width: var(--carousel-side-width);
+    opacity: 0.7;
+    transform:
+      translateY(var(--carousel-side-top))
+      translateX(calc(-1 * var(--carousel-side-center-shift)))
+      scale(var(--carousel-side-scale))
+      perspective(950px)
+      rotateY(23deg)
+      rotateZ(-0.7deg);
+  }
+}
+
+@keyframes outgoingToRightTilt {
+  from {
+    width: var(--carousel-center-width);
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1) perspective(950px) rotateY(0deg) rotateZ(0deg);
+  }
+
+  82% {
+    opacity: 1;
+  }
+
+  to {
+    width: var(--carousel-side-width);
+    opacity: 0.7;
+    transform:
+      translateY(var(--carousel-side-top))
+      translateX(var(--carousel-side-center-shift))
+      scale(var(--carousel-side-scale))
+      perspective(950px)
+      rotateY(-23deg)
+      rotateZ(0.7deg);
+  }
+}
+
+.mediaWrap {
+  position: relative;
+  --reflection-gap: 1.8rem;
+  margin-bottom: 5.2rem;
+  isolation: isolate;
+}
+
+.mediaWrap::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + var(--reflection-gap));
+  left: 0;
+  width: 100%;
+  height: 72%;
+  background-image: var(--reflection-image);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--carousel-card-radius);
+  transform: scaleY(-1);
+  opacity: 0.34;
+  filter: blur(1.1px);
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.36) 38%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.36) 38%, transparent 100%);
+}
+
+.centerCard,
+.sideCard {
+  border: 0;
+  border-radius: var(--carousel-card-radius);
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  overflow: visible;
+}
+
+.centerCard {
+  grid-column: 1;
+  position: relative;
+  width: var(--carousel-center-width);
+  justify-self: center;
+  z-index: 3;
+  display: block;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  transition: transform 260ms ease, box-shadow 260ms ease;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.24);
+}
+
+.centerCard:hover {
+  transform: translateY(-4px) scale(1.012);
+}
+
+.centerImage,
+.sideImage {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--project-card-border, var(--line));
+  border-radius: var(--carousel-card-radius);
+}
+
+.centerReflection,
+.sideReflection {
+  display: block;
+}
+
+.sideReflection::after {
+  height: 38%;
+  opacity: 0.2;
+  filter: blur(1.35px);
+}
+
+.sideCard {
+  appearance: none;
+  width: var(--carousel-side-width);
+  position: absolute;
+  top: var(--carousel-side-top);
+  padding: 0;
+  cursor: pointer;
+  justify-self: initial;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  opacity: 0.7;
+  filter: blur(1.1px) saturate(0.85);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.19);
+  transition: transform 260ms ease, opacity 260ms ease, filter 260ms ease;
+}
+
+.sideCard:hover {
+  opacity: 0.88;
+  filter: blur(0.4px) saturate(0.95);
+}
+
+.sideLeft {
+  left: 50%;
+  transform-origin: right center;
+}
+
+.sideRight {
+  left: 50%;
+  transform-origin: left center;
+}
+
+.sideLeft {
+  transform:
+    translateX(calc(-100% - var(--carousel-side-offset)))
+    scale(var(--carousel-side-scale))
+    perspective(950px)
+    rotateY(23deg)
+    rotateZ(-0.7deg);
+}
+
+.sideRight {
+  transform:
+    translateX(var(--carousel-side-offset))
+    scale(var(--carousel-side-scale))
+    perspective(950px)
+    rotateY(-23deg)
+    rotateZ(0.7deg);
+}

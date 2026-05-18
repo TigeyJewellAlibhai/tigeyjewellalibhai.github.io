@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+  --font-body: Calibri, 'Segoe UI', Candara, 'Trebuchet MS', sans-serif;
+  --font-display: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  --page-bg: #ffffff;
+  --surface: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --line: #d1d5db;
+  --brand: #0f172a;
+  --brand-soft: #1f2937;
+  --accent: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--page-bg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: var(--font-display);
+}
+
+a {
+  color: inherit;
+}
+
+[data-site-shell='true'] {
+  transition: background-color 420ms ease, color 420ms ease;
+}
+

@@ -1,0 +1,216 @@
+.heroBand {
+  background: #ffffff;
+  min-height: clamp(32rem, 96vh, 64rem);
+}
+
+.heroReel {
+  position: relative;
+  overflow: clip;
+  min-height: inherit;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+.heroReel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 52% 64%, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.2) 58%, #ffffff 100%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.36) 72%, #ffffff 100%);
+}
+
+.heroGif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: blur(2.4px) saturate(0.88);
+  opacity: 0.72;
+  transform: scale(1.08);
+  animation: heroFadeIn 520ms ease;
+}
+
+.heroForeground {
+  position: relative;
+  z-index: 2;
+  min-height: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.1rem, 5vh, 3rem) clamp(1rem, 5vw, 4.2rem);
+  gap: clamp(0rem, 0.5vw, 0.35rem);
+  transform: translateX(-8vw);
+}
+
+.heroSplash {
+  width: min(50vw, 620px);
+  max-height: 92%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.12));
+}
+
+.heroTitle {
+  margin: 0;
+  flex: 0 0 auto;
+  text-align: left;
+  line-height: 0.9;
+  color: #0b0b0f;
+  font-size: clamp(1.8rem, 7.1vw, 5.15rem);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  text-shadow: 0 6px 16px rgba(255, 255, 255, 0.45);
+}
+
+.heroTitle span {
+  display: block;
+}
+
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.72;
+  }
+}
+
+@media (max-width: 992px) {
+  .heroForeground {
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-6.8vw);
+  }
+
+  .heroSplash {
+    width: min(58vw, 500px);
+  }
+
+  .heroTitle {
+    flex: 0 0 clamp(10.5rem, 28vw, 16rem);
+    width: clamp(10.5rem, 28vw, 16rem);
+    font-size: clamp(1.62rem, 7.9vw, 3.2rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .heroForeground {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(0.95rem, 4.2vh, 2rem) clamp(0.8rem, 3vw, 1.4rem);
+    transform: translateX(0);
+    gap: 0.58rem;
+  }
+
+  .heroTitle {
+    position: static;
+    width: min(88vw, 560px);
+    text-align: center;
+    font-size: clamp(1.35rem, 8.7vw, 2.3rem);
+    font-weight: 500;
+    transform: translateX(0);
+  }
+
+  .heroSplash {
+    width: min(82vw, 480px);
+    margin-top: clamp(0.3rem, 1.8vh, 0.9rem);
+  }
+}
+
+.timeline {
+  position: relative;
+  --timeline-center-gap: 1.6rem;
+}
+
+.timelineTrack {
+  position: relative;
+  display: grid;
+  gap: 0.72rem;
+  padding-top: 0.1rem;
+}
+
+.timelineTrack::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: color-mix(in srgb, var(--line) 76%, transparent);
+  transform: translateX(-50%);
+}
+
+.timelineItem {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: calc(var(--timeline-center-gap) * 2);
+  align-items: center;
+}
+
+.timelineCardWrap {
+  width: min(100%, 700px);
+  position: relative;
+  z-index: 1;
+}
+
+.timelineItemLeft .timelineCardWrap {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.timelineItemRight .timelineCardWrap {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.86rem;
+  height: 0.86rem;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: var(--page-bg);
+  border: 2px solid color-mix(in srgb, var(--text) 44%, transparent);
+  z-index: 2;
+}
+
+@media (max-width: 720px) {
+  .timelineTrack::before {
+    left: 1rem;
+    transform: none;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    padding-left: 2rem;
+  }
+
+  .timelineCardWrap,
+  .timelineItemLeft .timelineCardWrap,
+  .timelineItemRight .timelineCardWrap {
+    width: 100%;
+    margin: 0;
+    grid-column: 1;
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .timelineDot {
+    left: 1rem;
+    top: 1.35rem;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,167 @@
+.page {
+  color: var(--text);
+}
+
+.pdfPage {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+  min-height: 0;
+}
+
+.pdfLoading {
+  margin: 0;
+  padding: 1rem;
+  color: var(--text);
+}
+
+.hero {
+  position: relative;
+  background: #111827;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.heroText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.25rem;
+  color: #f8fafc;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.heroText h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.heroText p {
+  margin: 0.5rem 0 0;
+  max-width: 44rem;
+}
+
+.badge {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(248, 250, 252, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: 1.25rem;
+}
+
+.body {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.body h2 {
+  margin-top: 0;
+}
+
+.body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.body p + p {
+  margin-top: 0.8rem;
+}
+
+.sidebar {
+  display: grid;
+  gap: 0.9rem;
+  align-content: start;
+}
+
+.metaCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.metaCard h3 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.metaCard p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.metaCard p + p {
+  margin-top: 0.4rem;
+}
+
+.recommendationText {
+  margin: 0;
+  color: var(--muted);
+  white-space: pre-line;
+}
+
+.recommendationBy {
+  margin-top: 0.8rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.metaCard ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+}
+
+.metaCard li + li {
+  margin-top: 0.45rem;
+}
+
+.metaCard a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.galleryTitle {
+  margin: 0 0 1rem;
+}
+
+.galleryImage {
+  width: 100%;
+  border-radius: 0.65rem;
+  border: 1px solid var(--line);
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.caption {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .overviewGrid {
+    grid-template-columns: 1fr;
+  }
+}
